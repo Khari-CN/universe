@@ -1,0 +1,211 @@
+@media screen and (max-width: 768px) {
+  .block1 {
+    padding: 5rem 4rem;
+    width: 100%;
+    > .title {
+      width: 100%;
+      font-size: 4.5rem;
+      line-height: 5.5rem;
+    }
+    .sub {
+      font-size: 5rem;
+      margin: 2rem 0;
+    }
+    .flex-wrapper {
+      margin: 0;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      .item {
+        padding: 4rem;
+        height: auto;
+        .title {
+          font-size: 3.5rem;
+        }
+        .des {
+          font-size: 3rem;
+        }
+      }
+      .item1 {
+        min-width: 100%;
+      }
+      .item2,
+      .item3,
+      .item4,
+      .item5 {
+        min-width: 40%;
+      }
+    }
+  }
+  .block2 {
+    background: url('@/assets/images/aboutUs/m/block2-bg.png');
+    background-size: cover;
+    width: 100%;
+    padding: 0;
+    .wrapper {
+      padding: 5rem 4rem;
+      > .title {
+        font-size: 6rem;
+        line-height: 9rem;
+      }
+      .flex-wrapper {
+        margin-top: 5rem;
+        gap: 2.5rem;
+        .item {
+          min-width: 40%;
+          padding: 2.5rem;
+          .content {
+            margin-top: 2.5rem;
+            text-align: start;
+            .title {
+              font-size: 3.5rem;
+            }
+            .des {
+              font-size: 3rem;
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .block3 {
+    width: 100%;
+    padding: 5rem 4rem;
+    > .title {
+      font-size: 6rem;
+      line-height: 9rem;
+    }
+    .flex-wrapper {
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      margin-top: 5rem;
+      > div {
+        padding: 5rem 4rem;
+        min-width: 40%;
+        img {
+          width: 20rem;
+          height: 20rem;
+        }
+      }
+    }
+  }
+  .block4 {
+    padding: 5rem 4rem;
+    width: 100%;
+    background: #effcfb;
+    > div {
+      width: 100%;
+      .title {
+        font-size: 6rem;
+        line-height: 9rem;
+      }
+      .flex-wrapper.wrapper {
+        margin-top: 5rem;
+      }
+      .flex-wrapper {
+        flex-direction: column;
+        margin-top: 2.5rem;
+        gap: 2.5rem;
+        .item {
+          min-height: 27rem;
+          border-radius: 3rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0;
+          padding-left: 4rem;
+          .title {
+            font-size: 3.5rem;
+            line-height: 5rem;
+          }
+          .des {
+            font-size: 3rem;
+            width: 54rem;
+          }
+        }
+
+        .item1 {
+          background: url('@/assets/images/customization/m/block4-bg1.png');
+          background-size: cover;
+        }
+        .item2 {
+          background: url('@/assets/images/customization/m/block4-bg2.png');
+          background-size: cover;
+        }
+        .item3 {
+          background: url('@/assets/images/customization/m/block4-bg3.png');
+          background-size: cover;
+        }
+        .item4 {
+          background: url('@/assets/images/customization/m/block4-bg4.png');
+          background-size: cover;
+        }
+      }
+    }
+  }
+  .block5 {
+    width: 100%;
+    padding: 5rem 4rem;
+    background: url('@/assets/images/customization/m/footer-bg.png') no-repeat;
+    background-size: cover;
+    .wrapper {
+      width: 100%;
+      padding: 0;
+      > .title {
+        font-size: 6rem;
+        line-height: 9rem;
+      }
+      .flex-wrapper {
+        flex-direction: column;
+        margin-top: 5rem;
+        .item {
+          width: 100%;
+          .item-title {
+            font-size: 4rem;
+            line-height: 10rem;
+            position: relative;
+          }
+          .des {
+            background-color: #fff;
+            text-align: center;
+            padding: 10rem 4rem 5rem 4rem;
+            font-size: 4rem;
+            margin-top: -5rem;
+            border-radius: 4rem;
+          }
+        }
+      }
+      .btn{
+        margin-top: 5rem;
+        width: 100%;
+      }
+    }
+  }
+  .block5 {
+    > .title {
+      font-size: 5.5rem;
+      line-height: 8rem;
+      padding: 0 11rem;
+    }
+    > .des {
+      font-size: 3rem;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .content {
+      margin-top: 5.5rem;
+      background: url('@/assets/images/app/m/footer-bg2.png') no-repeat;
+      background-size: cover;
+      width: 100%;
+      padding-top: 30rem;
+      padding-bottom: 7.5rem;
+      height: auto;
+    }
+  }
+  .copyright {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    padding: 5rem 8rem;
+  }
+}

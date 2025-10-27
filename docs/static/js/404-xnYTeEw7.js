@@ -1,0 +1,1 @@
+import{L as e,h as t}from"./@css-render-gAGWuW9d.js";import{t as n}from"./plugin-vueexport-helper-CApln3dS.js";var r={},i={"text-16":``};function a(n,r){return e(),t(`div`,i,` 404 `)}var o=n(r,[[`render`,a]]);export{o as default};

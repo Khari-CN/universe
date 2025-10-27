@@ -1,0 +1,121 @@
+@media screen and (max-width: 768px) {
+  .custom-dots {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5rem;
+  }
+  .custom-dots li {
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .custom-dots li.is-active {
+    width: 5rem;
+    background: #fff;
+  }
+  .service-wrapper {
+    padding: 5rem 4rem;
+    width: 100%;
+    background: url('@/assets/images/home/m/service-bg.png') no-repeat center;
+    background-size: cover;
+    .service {
+      width: 100%;
+      .title {
+        font-size: 6rem;
+        line-height: 9rem;
+      }
+      .des {
+        margin-top: 2.5rem;
+        font-size: 3.5rem;
+      }
+      .flex-wrapper {
+        margin-top: 2.5rem;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        > div {
+          min-width: 40%;
+          padding: 5rem;
+          img {
+            width: 20rem;
+            height: 20rem;
+          }
+          > div {
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .about-wrapper {
+    padding: 5rem 4rem;
+    width: 100%;
+    background: #effcfb;
+    .about {
+      width: 100%;
+      .title {
+        font-size: 6rem;
+        line-height: 9rem;
+      }
+      .flex-wrapper {
+        margin-top: 2.5rem;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        > div {
+          min-width: 100%;
+          img {
+            width: 100%;
+          }
+          > div {
+            padding: 4rem;
+            div {
+              padding: 0;
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .client-wrapper {
+    padding: 5rem 4rem;
+    width: 100%;
+    background: #fff;
+    .client {
+      width: 100%;
+      .title {
+        font-size: 6rem;
+        line-height: 9rem;
+      }
+
+      .flex-wrapper {
+        margin-top: 2.5rem;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        > div {
+          min-width: 40%;
+          padding: 2.5rem;
+          border-radius: 3rem;
+          img {
+            width: 100%;
+            height: auto;
+          }
+          > div {
+            margin-top: 1rem;
+            padding: 0;
+            > div {
+              font-size: 3.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

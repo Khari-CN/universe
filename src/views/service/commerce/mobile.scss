@@ -1,0 +1,157 @@
+@media screen and (max-width: 768px) {
+  .block1 {
+    padding: 5rem 4rem;
+    width: 100%;
+    .title {
+      width: 100%;
+      font-size: 4.2rem;
+      line-height: 5.5rem;
+    }
+    .sub {
+      font-size: 3.5rem;
+      margin: 2rem 0;
+    }
+    .flex-wrapper {
+      margin: 0;
+      gap: 2.5rem;
+      .item {
+        padding: 4rem;
+        height: auto;
+        .title {
+          font-size: 3.5rem;
+        }
+        .des {
+          font-size: 3rem;
+        }
+      }
+      .item1 {
+        min-width: 100%;
+      }
+      .item2,
+      .item3,
+      .item4,
+      .item5 {
+        min-width: 40%;
+      }
+    }
+  }
+  .block2 {
+    background: url('@/assets/images/aboutUs/m/block2-bg.png');
+    background-size: cover;
+    width: 100%;
+    padding: 0;
+    .wrapper {
+      padding: 5rem 4rem;
+      > .title {
+        font-size: 6rem;
+        line-height: 9rem;
+      }
+      .flex-wrapper {
+        margin-top: 5rem;
+        gap: 2.5rem;
+        .item {
+          min-width: 40%;
+          padding: 2.5rem;
+          .content {
+            margin-top: 2.5rem;
+            text-align: start;
+            .title {
+              font-size: 3.5rem;
+            }
+            .des {
+              font-size: 3rem;
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .block3 {
+    width: 100%;
+    padding: 5rem 4rem;
+    > .title {
+      font-size: 6rem;
+      line-height: 9rem;
+    }
+    .flex-wrapper {
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      margin-top: 5rem;
+      > div {
+        padding: 5rem 4rem;
+        min-width: 40%;
+        img {
+          width: 20rem;
+          height: 20rem;
+        }
+        .title {
+          font-size: 3.5rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        .des {
+          line-height: 4rem;
+          font-size: 3.1rem;
+        }
+      }
+    }
+  }
+  .block4 {
+    padding: 5rem 0;
+    background: url('@/assets/images/crm/m/footer-bg.png') no-repeat;
+    background-size: cover;
+    > .title {
+      font-size: 5.5rem;
+      line-height: 8rem;
+    }
+    > .des {
+      font-size: 3rem;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    > .sub {
+      font-size: 3.5rem;
+    }
+    .flex-wrapper {
+      padding: 0 4rem;
+      margin-top: 2.5rem;
+      width: 100%;
+      flex-wrap: wrap;
+      height: auto;
+      gap: 2.5rem;
+      .item {
+        min-width: 40%;
+        height: 58rem;
+        padding: 5rem 4rem;
+        :nth-child(1) {
+          font-size: 4.5rem;
+        }
+        :nth-child(2) {
+          font-size: 3.5rem;
+        }
+      }
+      .item1 {
+        background: url('@/assets/images/commerce/m/block4-bg1.png') no-repeat;
+        background-size: cover;
+      }
+      .item2 {
+        background: url('@/assets/images/commerce/m/block4-bg2.png') no-repeat;
+        background-size: cover;
+      }
+      .item3 {
+        background: url('@/assets/images/commerce/m/block4-bg3.png') no-repeat;
+        background-size: cover;
+      }
+      .item4 {
+        background: url('@/assets/images/commerce/m/block4-bg4.png') no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  .copyright {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    padding: 5rem 8rem;
+  }
+}

@@ -1,0 +1,374 @@
+export default {
+  header: {
+    home: 'Home',
+    about: 'About Us',
+    service: 'Services',
+    contact: 'Contact Us',
+    crm: 'Customer Relationship Management',
+    eCommerce: 'Electronic Commerce',
+    app: 'Mobile Application',
+    customization: 'Enterprise software customization',
+    cn: '简体中文',
+    tw: '繁體中文',
+    en: 'English',
+  },
+  footer: {
+    title: 'Ready to turn your idea into reality?',
+    des: "From a detailed plan to a preliminary concept, we welcome the chance to explore with you. Let's discuss how to leverage technology to drive your business forward and build a strategic advantage.",
+    btn: 'Contact Us Free Consultation',
+    copyright:
+      'Copyright © 2025 Meta Universe Information Technology Limited . All rights reserved. No Reproduction.',
+  },
+  home: {
+    serviceTitle: 'Our Services',
+    serviceDes:
+      "Our technology company specializes in providing comprehensive solutions, including Customer Relationship Management (CRM) systems, E-commerce platforms, and mobile application (APP) development. We are committed to delivering customized enterprise software tailored to our clients' unique needs, helping businesses enhance operational efficiency, strengthen customer relationships, and explore new growth opportunities. Whether it's building an efficient customer management system, creating a seamless shopping experience, or developing innovative mobile applications, we offer professional technical support and high-quality services to empower businesses in their digital transformation and long-term development.",
+    crm: 'Customer Relationship Management',
+    eCommerce: 'Electronic Commerce',
+    app: 'Mobile Application',
+    softwareCustom: 'Enterprise software',
+    aboutTitle: ' Why Work With Us?',
+    aboutItem1Title: 'Technical Capabilities and Innovation',
+    aboutItem1Des:
+      'Our team comprises veteran experts, masters of cutting-edge technology, committed to delivering top-tier, industry-leading products.',
+    aboutItem2Title: 'Agile Development Process',
+    aboutItem2Des:
+      'Our commitment to the Agile methodology fosters project transparency and operational efficiency, enabling rapid response to market dynamics and early delivery of value to our customers.',
+    aboutItem3Title: 'Dedicated Partnership and Support',
+    aboutItem3Des:
+      'From the moment your project goes live and throughout its entire lifecycle, we engage in deep collaboration, offering long-term technical maintenance to ensure your application continues to evolve.',
+    clientTitle: 'What Our Clients Say',
+    clientDes1:
+      'Our collaboration with Meta Universe has revolutionized our approach to data processing. Their e-commerce platform has enhanced our operational efficiency by 40%.',
+    clientDes2:
+      "Beyond the outstanding app they delivered lay something of paramount importance: invaluable strategic advice. The entire team's expertise and commitment were truly remarkable",
+    clientDes3:
+      'The new product launch was met with an overwhelmingly positive user response. Their intuitive interface has directly translated into a much higher user retention rate and an 80% reduction in how-to questions received by customer support',
+    clientDes4:
+      "This custom system has cut our tedious report generation time from 10 hours per week to just 2. This is more than just an efficiency gain; it has freed our team's creativity, allowing us to focus on strategic initiatives",
+    clientDes5:
+      'Many tech vendors are available, but Meta Universe proved to be a real partner. They were deeply invested in our success, standing with us from start to finish to deliver a superior outcome that went beyond our initial goals',
+    clientDes6:
+      'A complex technical issue had stumped our internal team for months. Meta Universe stepped in, identified the core problem, and delivered a rapid solution in a mere two weeks. They are the real deal—true experts and a total game-changer',
+  },
+  aboutUs: {
+    block1Title: '我們的使命與願景',
+    content1Title: '讓每個決策都有數據可依',
+    content1Des:
+      '我們致力於打破數據分析的高技術門檻，讓無論是初創公司還是大型企業，都能輕鬆駕馭數據的力量，做出更快速、更精準的商業決策',
+    content2Title: '成為全球企業最信賴的智慧大腦',
+    content2Des:
+      '我們展望一個未來，人工智慧不再是少數專家的工具，而是融入每個企業運營血脈的基礎設施，驅動一個更加高效、智慧的世界',
+    block2Title: '我們的故事',
+    block2Des1:
+      '我們的創始團隊曾在跨國科技公司負責戰略規劃。每個季度，我們都面臨同樣的問題：面對數十個數據來源和成千上萬的報表，團隊需要花費數週時間才能拼湊出一個模糊的商業圖景。我們相信，一定有更好的方法。',
+    block2Des2:
+      '於是，我們決定自己創造這個方法。Meta Universe誕生，初衷只有一個：打造一個能聽懂商業問題、並直接用數據給出答案的夥伴給客戶。今天，我們已服務於全球超過50000家企業，但那份解決核心痛點的初心，從未改變。',
+    block3Title: '我們的價值',
+    block3Item1Title: '客戶成功至上',
+    block3Item1Des: '我們定義的成功，是客戶使用我們的工具真正取得了商業成果',
+    block3Item2Title: '擁抱極致創新',
+    block3Item2Des: '我們不滿足於現狀，不斷在探索AI技術的邊界，為客戶創造驚喜',
+    block3Item3Title: '保持透明開放',
+    block3Item3Des:
+      '從程式碼到溝通，我們堅持公開透明，與客戶和團隊建立堅實的信任',
+    block3Item4Title: '協作共創未來',
+    block3Item4Des:
+      '我們相信多元化的團隊能激發最棒的創意，共同解決最複雜的挑戰',
+    block4Title: '我們獨特的技術優勢',
+    block4Item1Title: '自然語言查詢',
+    block4Item1Des: '無需學習SQL或程式語言，直接用中文提問，即可獲得分析結果',
+    block4Item2Title: '預測性洞察',
+    block4Item2Des:
+      '我們的演算法不僅分析過去，更能預測未來趨勢，提前發現機遇與風險',
+    block4Item3Title: '端到端安全',
+    block4Item3Des:
+      '採用同態加密技術，你的原始數據無需離開本地環境，即可完成分析，安全無憂',
+    block4Item4Title: '無縫集成',
+    block4Item4Des:
+      '可與客戶關係管理系統 (CRM），電子商務平台(E-Commerce)及手機應用程式(APP)開發無縫連接，打破數據孤島',
+    footerTitle: '加入我們',
+    footerDes:
+      '我們提供充滿挑戰的項目、頂級的技術夥伴、有競爭力的薪酬福利，以及一個讓你可以自由發揮、快速成長的環境',
+  },
+  crm: {
+    block1Title:
+      '一款智能、一體化的CRM平台，幫助你的銷售、行銷和客服團隊緊密協作， 打造無縫的客戶體驗，實現業績飛躍',
+    block1SubTitle: '你是否正面臨這些難題？',
+    block1Item1Title: '線索散落各處？ ',
+    block1Item1Des: '表格、郵件、社交媒體的潛在客戶資訊無法統一管理，遺漏商機',
+    block1Item2Title: '銷售預測靠猜測？',
+    block1Item2Des: ' 無法清晰掌握銷售數據，業績預測不準確，決策失據',
+    block1Item3Title: '團隊協作不順暢？ ',
+    block1Item3Des: '銷售、行銷與客服部門資訊孤島，客戶體驗斷裂',
+    block1Item4Title: '手動操作耗時費力？ ',
+    block1Item4Des: '重複性的數據輸入和跟進工作，佔用了寶貴的銷售時間',
+    block1Item5Title: '客戶流失無預警？ ',
+    block1Item5Des: '無法洞察客戶不滿或流失風險，來不及採取挽留行動',
+    block2Title1: '一個平台',
+    block2Title2: '全方位幫助你的客戶關係',
+    block2Item1Title: '整合客戶資訊',
+    block2Item1Des:
+      '在單一介面整合每個客戶的所有資訊：聯絡記錄、交易歷史、社交動態。全面了解客戶，實現個性化互動',
+    block2Item2Title: '智能銷售自動化',
+    block2Item2Des:
+      '自動化捕捉線索、評分與分配。視覺化銷售管道讓你清晰跟進每個商機階段。AI驅動的預測分析，幫你精準預測成交金額與最佳成交時間',
+    block2Item3Title: '行銷自動化與培育',
+    block2Item3Des:
+      '打造個人化的行銷旅程，通過郵件、簡訊和社群媒體自動培育潛在客戶，將冷線索轉化為熱商機',
+    block2Item4Title: '整合客服中心',
+    block2Item4Des:
+      '將客戶來電、郵件、即時聊天整合至同一個平台。客服人員能立即獲取客戶背景，提供高效、有溫度的支援服務',
+    block2Item5Title: '分析與報告',
+    block2Item5Des:
+      '一鍵生成可視化儀表板，實時追蹤關鍵績效指標（如轉化率、客戶生命周期價值、團隊活動量），讓數據驅動決策',
+    block2Item6Title: '無縫集成生態',
+    block2Item6Des:
+      '輕鬆與你現有的工具連接，如通訊軟件、財務軟體等，打造統一的營運中樞',
+    block3Title: '為現代企業打造的堅實基礎',
+    block3Item1Title: 'AI驅動的洞察',
+    block3Item1Des:
+      '我們的AI引擎不僅是自動化，更能為你提供下一步行動建議、識別流失風險',
+    block3Item2Title: '100% 雲原生架構',
+    block3Item2Des:
+      '無需安裝，隨時隨地透過瀏覽器或App使用，自動享受最新功能與安全更新',
+    block3Item3Title: '企業級安全合規',
+    block3Item3Des:
+      '採用銀行級別的數據加密技術，並符合國際標準，確保你的客戶數據萬無一失',
+    block3Item4Title: '極致可擴展性',
+    block3Item4Des:
+      ' 無論你是10人的初創團隊還是萬人跨國企業，我們的系統都能流暢支撐你的業務增長',
+    block4Title: '準備好重塑你的客戶關係管理了嗎？',
+    block4SubTitle: '加入數以萬計的領先企業，體驗智能CRM帶來的變革性力量',
+    block4Title2: '—— 選擇最適合你業務成長的方案 ——',
+    block4Item1Title: '基礎版',
+    block4Item1Des: '適合初創團隊，核心CRM功能',
+    block4Item2Title: '專業版 (最受歡迎)',
+    block4Item2Des: ' 包含銷售自動化、AI洞察、進階報告',
+    block4Item3Title: '企業版',
+    block4Item3Des: '全功能解鎖，包含自定義、專屬支援和最高安全級別',
+  },
+  commerce: {
+    block1Title:
+      '一款為未來商業設計的智能電商平台，整合官網、行銷、金流與物流，助你輕鬆管理、高效轉化、持續擴張',
+    block1SubTitle: '你的線上業務是否被這些問題拖累？',
+    block1Item1Title: '技術門檻高？',
+    block1Item1Des:
+      '想打造獨特品牌官網，卻被程式碼、外掛程式和相容性問題搞得寸步難行',
+    block1Item2Title: '流量不轉化？',
+    block1Item2Des:
+      '訪客來了卻不消費，缺乏有效的行銷工具進行追蹤、再行銷與培育',
+    block1Item3Title: '管理效率低下？',
+    block1Item3Des: '訂單、庫存、客服數據分散在各處，手動處理耗時且易出錯',
+    block1Item4Title: '擴展性不足？',
+    block1Item4Des: '業務增長後，現有平台無法負荷流量與複雜的全球營運需求',
+    block1Item5Title: '行動體驗不佳？',
+    block1Item5Des: '後台難用手機操作，前台商店在手機上顯示不佳，白白流失訂單',
+    block2Title: '為成功銷售而生的完整工具集',
+    block2Item1Title: '靈活無比的商店建置器',
+    block2Item1Des:
+      '透過直覺的「拖放式」編輯器和龐大的專業版型市場，無需編程也能打造獨一無二的品牌官網。完全支援自訂網域',
+    block2Item2Title: '無縫的Omni-channel體驗',
+    block2Item2Des:
+      '一個後台，統一管理你的官網、Amazon、Instagram、Facebook商店、實體POS，甚至未來的新興社交平台',
+    block2Item3Title: '內建智慧行銷與轉化引擎',
+    block2Item3Des:
+      ' 內建SEO工具、棄單回收自動化、會員分級與點數系統、彈出視窗、AB測試，讓你不依賴第三方外掛程式也能最大化轉化率',
+    block2Item4Title: '強大的訂單與庫存管理',
+    block2Item4Des:
+      '集中管理所有訂單、自動化履行流程、即時同步庫存、並輕鬆處理退換貨。支援多倉庫與跨境物流對接',
+    block2Item5Title: '安全且多元的金流與稅務',
+    block2Item5Des:
+      '內建整合全球數十種支付網關，提供安全的一站式結帳體驗。自動計算各國稅率，合規經營無憂',
+    block2Item6Title: '數據驅動的決策儀表板',
+    block2Item6Des:
+      '透過可視化報表，深入洞察關鍵指標：流量來源、熱門商品、客戶終身價值、轉化漏斗，讓每個決策都有據可依',
+    block3Title: '為現代企業打造的堅實基礎',
+    block3Item1Title: '雲原生與無頭架構',
+    block3Item1Des:
+      '享受極致的網站速度與穩定性。具備API-first設計，讓你能自由對接任何前端或第三方系統，靈活度滿分',
+    block3Item2Title: '企業級安全與效能',
+    block3Item2Des:
+      '提供99.9%上線時間保證、全球CDN加速、自動化備份與惡意軟體防護，讓你專注於業務',
+    block3Item3Title: 'AI驅動的智慧營運',
+    block3Item3Des:
+      '我們的AI助手能為你推薦商品標題與描述、預測庫存需求、甚至識別潛在的詐騙交易',
+    block3Item4Title: '龐大的應用市場',
+    block3Item4Des:
+      ' 擁有數千款經過認證的第三方外掛程式與主題，無論你需要什麼進階功能，幾乎都能輕鬆實現',
+    block4Title: '隨你的業務規模一起成長的定價',
+    block4SubTitle:
+      '提供從個人創業到大型企業的方案，交易手續費隨方案升級而遞減或免除',
+    block4Title2: '—— 選擇最適合你業務成長的方案 ——',
+    block4Item1Title: '基礎版',
+    block4Item1Des: '適合側邊創業，具備核心功能',
+    block4Item2Title: '成長版',
+    block4Item2Des: '解除行銷自動化與專業報表，適合快速擴張的品牌',
+    block4Item3Title: '商務版',
+    block4Item3Des: '進階API與自訂功能，適合規模化企業',
+    block4Item4Title: '企業版',
+    block4Item4Des: '完全客製化方案，專屬服務與支援',
+  },
+  app: {
+    block1Title:
+      '我們不只是開發APP，更是你的策略技術夥伴。從概念發想到全球部署，我們提供頂尖的客製化移動解決方案，驅動你的業務增長',
+    block1SubTitle: '你是否在尋找可靠的技術夥伴？',
+    block1Item1Title: '想法難以落地？',
+    block1Item1Des: '擁有絕佳創意，卻找不到能理解並完美執行的技術團隊',
+    block1Item2Title: '預算與時程失控？',
+    block1Item2Des: '開發過程充滿不確定性，導致項目延期、預算超支',
+    block1Item3Title: '產品體驗不佳？',
+    block1Item3Des: '開發出的APP使用者體驗差，留不住用戶，無法實現商業目標',
+    block1Item4Title: '技術選型困難？',
+    block1Item4Des: '面對Native、Flutter、React Native等技術選擇無所適從',
+    block1Item5Title: '缺乏長期支援？',
+    block1Item5Des: '上線後遇到問題或需要迭代，找不到原團隊支援',
+    block2Title: '全方位的移動解決方案',
+    block2Item1Title: '顧問與策略規劃',
+    block2Item1Des:
+      '深入分析你的業務與用戶，進行市場定位、功能規劃與技術選型建議，共同制定成功的產品藍圖',
+    block2Item2Title: 'UX/UI 卓越設計',
+    block2Item2Des:
+      '以用戶為中心的設計流程，從線框圖、互動原型到高保真視覺設計，打造直覺、美觀且高效的用戶界面',
+    block2Item3Title: '原生與跨平台開發',
+    block2Item3Des:
+      '根據你的需求，提供最優技術方案，原生開發和跨平台開發，實現單一程式碼庫，高效部署至多平台',
+    block2Item4Title: '後端與API整合',
+    block2Item4Des:
+      '構建穩定、可擴展的雲端後端服務，並無縫整合第三方API（如支付、地圖、社交媒體）',
+    block2Item5Title: '品質保證與測試',
+    block2Item5Des:
+      '貫穿整個開發週期的全面測試，包括功能、效能、安全與相容性測試，確保產品上線無憂',
+    block2Item6Title: '部署與持續維運',
+    block2Item6Des:
+      '協助上架至全球應用商店，並提供上線後的監控、維護、更新與功能迭代服務',
+    block3Title: '超越程式碼的合作價值',
+    block3Item1Title: '資深技術團隊',
+    block3Item1Des: '由擁有10年以上經驗的技術長領銜，團隊成員通過嚴格篩選',
+    block3Item2Title: '對品質的執著',
+    block3Item2Des: '我們追求程式碼的潔淨度、架構的優雅與產品的最終體驗',
+    block3Item3Title: '專案管理專家',
+    block3Item3Des: '專業的PM確保項目在預算和時程內高質量交付',
+    block3Item4Title: '成為你的技術夥伴',
+    block3Item4Des: '我們希望深度理解你的業務，提供長期的技術戰略支援',
+    block4Title: '清晰透明的五步合作流程',
+    block4Item1Title: '1. 需求溝通',
+    block4Item1Sub: '深入交流，理解你的核心目標與挑戰',
+    block4Item2Title: '2. 規劃與報價',
+    block4Item2Sub: '提供詳細方案、時程與透明報價',
+    block4Item3Title: '3.設計與開發',
+    block4Item3Sub: '啟動敏捷開發，定期演示，收集回饋',
+    block4Item4Title: '4.測試與交付',
+    block4Item4Sub: '全面測試，協助上架應用商店',
+    block4Item5Title: '5.維護與迭代',
+    block4Item5Sub: '提供持續的技術支援與優化服務',
+    block5Title: '準備好啟動你的下一個標誌性APP項目了嗎？',
+    block5Sub: '讓我們為你的想法進行一次技術與商業層面的深度剖析',
+  },
+  customization: {
+    block1Title:
+      '告別現成軟體。我們透過頂尖的客製化開發，將你的戰略構想轉化為高效、可擴展的企業級應用，驅動營運革新與競爭優勢',
+    block1SubTitle: '你的企業是否正被這些問題所困擾？',
+    block1Item1Title: '流程效率低下？',
+    block1Item1Des:
+      '現有系統無法適應你獨特的業務流程，導致大量手動操作與人為錯誤',
+    block1Item2Title: '數據無法驅動決策？',
+    block1Item2Des:
+      '關鍵業務數據散落在多個孤立的系統中，無法形成統一的洞察視圖',
+    block1Item3Title: '現成軟體限制發展？',
+    block1Item3Des:
+      '市面上的套裝軟體無法滿足你的特殊需求，定制化修改成本高昂且不穩定',
+    block1Item4Title: '系統整合難度大？',
+    block1Item4Des: '新舊系統、內外API之間無法順暢對話，資訊流動受阻',
+    block1Item5Title: '安全與合規性風險？ ',
+    block1Item5Des: '現有系統難以滿足日益嚴格的數據安全法規與行業合規要求',
+    block2Title: '從概念到落地 全程護航的定制開發服務',
+    block2Item1Title: '諮詢與戰略規劃',
+    block2Item1Des:
+      '我們的資深業務分析師將深入一線，與你共同梳理業務流程、定義需求範疇，並輸出清晰的產品路線圖與技術方案',
+    block2Item2Title: 'UX/UI與架構設計',
+    block2Item2Des:
+      '為你的企業用戶設計極致流暢的操作體驗。同時，我們將設計穩定、高性能、可擴展的系統架構，為未來奠基',
+    block2Item3Title: '敏捷式開發與整合',
+    block2Item3Des:
+      '採用業界領先的技術棧，進行透明化的敏捷開發。我們專精於複雜的系統整合，能讓新系統與你現有的ERP、CRM、財務軟體無縫對接',
+    block2Item4Title: '嚴苛的品質保證',
+    block2Item4Des:
+      '實施企業級的測試策略，包括單元測試、整合測試、效能壓力測試與滲透測試，確保系統上線後的穩定與安全',
+    block2Item5Title: '平滑部署與培訓',
+    block2Item5Des:
+      '提供完善的部署方案、數據遷移服務與全員操作培訓，確保新系統順利上線，平滑過渡',
+    block2Item6Title: '持續優化與維運',
+    block2Item6Des:
+      '建立長期技術合作夥伴關係，提供系統監控、維護、升級與功能迭代服務，讓你的系統持續創造價值',
+    block3Title: '備受信賴的技術實力與行業知識',
+    block3Item1Title: '前端',
+    block3Item1Des: 'React, Angular, Vue.js, TypeScri',
+    block3Item2Title: '後端',
+    block3Item2Des:
+      'Java Spring Boot, .NET Core, Python (Django/FastAPI), Go, Node.js',
+    block3Item3Title: '資料庫',
+    block3Item3Des: 'PostgreSQL, MySQL, MongoDB, Redis, Oracle',
+    block3Item4Title: '雲服務',
+    block3Item4Des: 'AWS, Azure, Google Cloud, 私有雲部署',
+    block3Item5Title: '微服務與容器化',
+    block3Item5Des: 'Docker, Kubernetes, Spring Cloud',
+    block3Item6Title: '新興科技',
+    block3Item6Des: 'AI/ML整合、RPA、大數據分析、IoT平台',
+    block4Title: '為什麼選擇我們？',
+    block4Sub: '我們不僅是供應商，更是你的技術合作夥伴',
+    block4Item1Title: '資深團隊',
+    block4Item1Des: '由擁有15年以上企業級軟體開發經驗的技術專家領銜',
+    block4Item2Title: '對商業價值的聚焦',
+    block4Item2Des:
+      '我們始終思考如何用技術為你的業務帶來實際的ROI（投資回報率）',
+    block4Item3Title: '透明的專案管理',
+    block4Item3Des:
+      '採用Jira/Confluence等專業工具，你可隨時查看專案進度、程式碼庫與測試報告',
+    block4Item4Title: '企業級安全保障',
+    block4Item4Des:
+      '從程式碼到部署，我們將安全與合規性融入開發生命週期的每一個環節',
+    block5Title: '合作流程',
+    block5Item1Title: '1.需求探索',
+    block5Item1Sub: '深度訪談，輸出《需求與解決方案建議》',
+    block5Item2Title: '2.方案與報價',
+    block5Item2Sub: '提供詳細的功能規格、技術方案、時程與透明報價',
+    block5Item3Title: '3.設計與開發',
+    block5Item3Sub: '啟動專案，每週同步進度，定期演示可運行版本',
+    block5Item4Title: '4.測試與上線',
+    block5Item4Sub: '用戶驗收測試，協助部署與上線',
+    block5Item5Title: '5.維護與成長',
+    block5Item5Sub: '進入長期維運與合作夥伴階段',
+  },
+  contact: {
+    block1Title:
+      '我們已準備好，為你的挑戰提供技術解決方案。無論是專案諮詢、產品支援或 合作提議，請隨時與我們聯繫',
+    block1SubTitle: '為了更快地協助你，請選擇最相關的聯絡類別：',
+    block1Item1Title: '銷售諮詢',
+    block1Item1Des:
+      '對我們的產品或客製化開發服務感興趣？預約免費諮詢，讓我們為你提供最佳建議的解決方案',
+    block1Item1Btn: '預約免費諮詢',
+    block1Item2Title: '技術支援',
+    block1Item2Des:
+      '使用產品時遇到技術問題？我們的專家支援團隊將為你提供快速、專業的協助',
+    block1Item2Btn: '聯絡我們',
+    block1Item3Title: '合作提案',
+    block1Item3Des:
+      '你是尋求技術合作、通路代理或人才招募的夥伴嗎？我們樂意聆聽你的想法',
+    block1Item3Btn: '聯絡我們',
+    block1Item4Title: '聯絡我們',
+    block1Item4Des:
+      '如有任何疑問或問題，歡迎你電郵聯絡我們，查詢了解更多成功案例與服務詳情',
+    block1Item4Btn: 'contact\@\metaui66.com',
+    block2Title: '填寫表單 我們將盡快回覆',
+    input1Label: '全名：',
+    input2Label: '公司名稱：',
+    input3Label: '公司電子郵件：',
+    input4Label: '聯絡類型 ：',
+    input5Label: '專案/產品興趣 ：',
+    input6Label: '預算範圍 ：',
+    input7Label: '想了解的具體需求或挑戰  ：',
+    input8Label: '想了解的具體需求或挑戰  ：',
+    submit: '提交',
+  },
+}

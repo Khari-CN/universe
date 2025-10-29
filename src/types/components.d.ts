@@ -18,6 +18,7 @@ declare module 'vue' {
     IconCustomTriangle: typeof import('~icons/custom/triangle')['default']
     LanguageSelector: typeof import('./../components/LanguageSelector/index.vue')['default']
     NButton: typeof import('naive-ui')['NButton']
+    NCarousel: typeof import('naive-ui')['NCarousel']
     NConfigProvider: typeof import('naive-ui')['NConfigProvider']
     NDropdown: typeof import('naive-ui')['NDropdown']
     NForm: typeof import('naive-ui')['NForm']

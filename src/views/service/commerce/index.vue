@@ -1,20 +1,54 @@
 <template>
   <div>
     <home-header></home-header>
-    <img
-      v-if="!isMobile"
-      block
-      h-auto
-      w-full
-      src="@/assets/images/commerce/banner.png"
-    />
-    <img
-      v-else
-      block
-      h-auto
-      w-full
-      src="@/assets/images/commerce/m/banner.png"
-    />
+    <template v-if="locale === 'zh_TW'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/commerce/banner.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/commerce/m/banner.png"
+      />
+    </template>
+    <template v-if="locale === 'en_US'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/commerce/banner-en.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/commerce/m/banner-en.png"
+      />
+    </template>
+    <template v-if="locale === 'zh_CN'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/commerce/banner-zh.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/commerce/m/banner-zh.png"
+      />
+    </template>
     <div class="block1" max-w-1400 m-auto py-80>
       <div class="title" text="center 30" w-930 font-700 leading-43 m-auto>
         {{ $t('commerce.block1Title') }}
@@ -23,7 +57,7 @@
         {{ $t('commerce.block1SubTitle') }}
       </div>
       <div class="flex-wrapper" flex my-40 gap-40 flex-wrap>
-        <div class="item1 item" flex-1 h-180 p-50 rounded-16>
+        <div class="item1 item" flex-1 h-180 p-50 rounded-16 min-w="44%">
           <div class="title" text="20" font-700>
             {{ $t('commerce.block1Item1Title') }}
           </div>
@@ -39,7 +73,7 @@
             {{ $t('commerce.block1Item2Des') }}
           </div>
         </div>
-        <div class="item3 item" flex-1 h-180 p-50 rounded-16 min-w="44%">
+        <div class="item3 item" flex-1 h-180 p-50 rounded-16>
           <div class="title" text="20" font-700>
             {{ $t('commerce.block1Item3Title') }}
           </div>
@@ -280,7 +314,7 @@
       <div class="title" font-700 text="center 48 #fff" leading-70>
         {{ $t('commerce.block4Title') }}
       </div>
-      <div class="des" text="30 #fff center" mt-20 mb-40>
+      <div class="des" max-w="1400" m-auto text="30 #fff center" mt-20 mb-40>
         {{ $t('commerce.block4SubTitle') }}
       </div>
       <div class="sub" text="30 #fff center" font-700>
@@ -323,6 +357,9 @@
 <script setup lang="ts">
   import { useGlobalStore } from '@/store'
   import { storeToRefs } from 'pinia'
+  import { useI18n } from 'vue-i18n'
+
+  const { locale } = useI18n()
 
   const globalStore = useGlobalStore()
 
@@ -332,6 +369,11 @@
 <style scoped lang="scss">
   @use './mobile.scss';
   .block1 {
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .item1 {
       background: linear-gradient(90deg, #f2f9fd 0%, #d9e6fd 100%);
     }

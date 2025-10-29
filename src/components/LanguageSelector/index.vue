@@ -78,15 +78,21 @@
     { name: 'English', key: LanguageMap.EN },
   ]
   const changeLanguage = (lang: string) => {
-    // i18n.locale.value = lang
-    // localStorage.setItem('language', lang)
-    // window.location.reload()
-    return
+    // return
+    i18n.locale.value = lang
+    localStorage.setItem('language', lang)
+    window.location.reload()
   }
 
   const curLang = computed(() => {
     const item = languageArr.find((item) => item.key === i18n.locale.value)
     return item?.name
+  })
+
+  onMounted(() => {
+    window.addEventListener('click', () =>{
+      isShowLangMenu.value = false
+    })
   })
 </script>
 

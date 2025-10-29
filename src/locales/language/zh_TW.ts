@@ -17,7 +17,7 @@ export default {
     des: '無論你有一個明確的項目藍圖，還是只想初步探討科技的可能性，我們都樂意與你交流。讓我們一起聊聊，如何用科技為你的業務創造價值。',
     btn: '聯繫我們 免費諮詢',
     copyright:
-      'Copyright © 2025 Meta Universe Information Technology Limited 版权所有不得转载',
+      'Copyright © 2025 Meta Universe Information Technology Limited 版權所有不得轉載',
   },
   home: {
     serviceTitle: '我們的服務',
@@ -43,7 +43,7 @@ export default {
     clientDes2:
       '他們不僅交付了一個出色的APP，更提供了寶貴的戰略建議。整個團隊的專業度和責任心令人印象深刻',
     clientDes3:
-      '新產品上線後，用戶好評如潮。他們設計的直觀介面讓用戶留存率大幅提升，客服收到的操作問題也減少了80',
+      '新產品上線後，用戶好評如潮。他們設計的直觀介面讓用戶留存率大幅提升，客服收到的操作問題也減少了80%',
     clientDes4:
       '這套定制系統將我們繁瑣的報告生成時間從每週 10 小時縮短到 2 小時。這不僅是效率的提升，更是解放了團隊的創造力，讓我們能專注於戰略性工作',
     clientDes5:
@@ -252,15 +252,15 @@ export default {
     block3Item4Title: '成為你的技術夥伴',
     block3Item4Des: '我們希望深度理解你的業務，提供長期的技術戰略支援',
     block4Title: '清晰透明的五步合作流程',
-    block4Item1Title: '1. 需求溝通',
+    block4Item1Title: '需求溝通',
     block4Item1Sub: '深入交流，理解你的核心目標與挑戰',
-    block4Item2Title: '2. 規劃與報價',
+    block4Item2Title: '規劃與報價',
     block4Item2Sub: '提供詳細方案、時程與透明報價',
-    block4Item3Title: '3.設計與開發',
+    block4Item3Title: '設計與開發',
     block4Item3Sub: '啟動敏捷開發，定期演示，收集回饋',
-    block4Item4Title: '4.測試與交付',
+    block4Item4Title: '測試與交付',
     block4Item4Sub: '全面測試，協助上架應用商店',
-    block4Item5Title: '5.維護與迭代',
+    block4Item5Title: '維護與迭代',
     block4Item5Sub: '提供持續的技術支援與優化服務',
     block5Title: '準備好啟動你的下一個標誌性APP項目了嗎？',
     block5Sub: '讓我們為你的想法進行一次技術與商業層面的深度剖析',
@@ -329,15 +329,15 @@ export default {
     block4Item4Des:
       '從程式碼到部署，我們將安全與合規性融入開發生命週期的每一個環節',
     block5Title: '合作流程',
-    block5Item1Title: '1.需求探索',
+    block5Item1Title: '需求探索',
     block5Item1Sub: '深度訪談，輸出《需求與解決方案建議》',
-    block5Item2Title: '2.方案與報價',
+    block5Item2Title: '方案與報價',
     block5Item2Sub: '提供詳細的功能規格、技術方案、時程與透明報價',
-    block5Item3Title: '3.設計與開發',
+    block5Item3Title: '設計與開發',
     block5Item3Sub: '啟動專案，每週同步進度，定期演示可運行版本',
-    block5Item4Title: '4.測試與上線',
+    block5Item4Title: '測試與上線',
     block5Item4Sub: '用戶驗收測試，協助部署與上線',
-    block5Item5Title: '5.維護與成長',
+    block5Item5Title: '維護與成長',
     block5Item5Sub: '進入長期維運與合作夥伴階段',
   },
   contact: {
@@ -359,7 +359,6 @@ export default {
     block1Item4Title: '聯絡我們',
     block1Item4Des:
       '如有任何疑問或問題，歡迎你電郵聯絡我們，查詢了解更多成功案例與服務詳情',
-    block1Item4Btn: 'contact\@\metaui66.com',
     block2Title: '填寫表單 我們將盡快回覆',
     input1Label: '全名：',
     input2Label: '公司名稱：',
@@ -368,7 +367,7 @@ export default {
     input5Label: '專案/產品興趣 ：',
     input6Label: '預算範圍 ：',
     input7Label: '想了解的具體需求或挑戰  ：',
-    input8Label: '想了解的具體需求或挑戰  ：',
+    input8Label: '你從何處得知我們？',
     submit: '提交',
   },
 }

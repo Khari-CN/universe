@@ -143,6 +143,7 @@
             b="1px solid #F2F2F6"
             cursor-pointer
             rounded-16
+            @click="jumpTo({name: 'crm'})"
           >
             <img
               inline-block
@@ -164,6 +165,7 @@
             b="1px solid #F2F2F6"
             cursor-pointer
             rounded-16
+            @click="jumpTo({name: 'eCommerce'})"
           >
             <img
               inline-block
@@ -185,6 +187,7 @@
             b="1px solid #F2F2F6"
             cursor-pointer
             rounded-16
+            @click="jumpTo({name: 'app'})"
           >
             <img
               inline-block
@@ -206,6 +209,7 @@
             b="1px solid #F2F2F6"
             cursor-pointer
             rounded-16
+            @click="jumpTo({name: 'customization'})"
           >
             <img
               inline-block
@@ -458,7 +462,7 @@
               block
               w-full
               h-auto
-              src="@/assets/images/home/client-icon1.png"
+              src="@/assets/images/home/client-icon6.png"
               alt=""
             />
             <div mt-20 relative px-40>

@@ -6,7 +6,7 @@
     fixed
     pl-80
     pr-100
-    py-20
+    py-25
     flex
     items-center
     justify-between
@@ -15,7 +15,7 @@
     <icon-custom-logo
       v-if="!isMobile || route.name === 'home'"
       class="logo"
-      h-60
+      h-50
       cursor-pointer
       @click="router.push({ name: 'home' })"
     ></icon-custom-logo>
@@ -112,12 +112,12 @@
       v-for="item in menuRoute"
       border-t="1px solid #E9EAEB"
       leading-52
-      text="center 16"
+      text="16"
     >
       <div
         flex
         items-center
-        justify-center
+        pl="40%"
         :style="{
           color:
             item.name === route.name ||
@@ -143,6 +143,7 @@
       </div>
       <div
         v-for="child in item.children"
+        pl="40%"
         :style="{
           display: selectedSubMenu === item.name ? 'block' : 'none',
           color: child.name === route.name ? '#48a0e1' : '',
@@ -190,7 +191,6 @@
       'div',
       {
         style: {
-          textAlign: 'center',
           color: option.key === route.name ? '#1A6FFB' : '',
         },
       },

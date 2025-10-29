@@ -1,14 +1,49 @@
 <template>
   <div>
     <home-header></home-header>
-    <img
-      v-if="!isMobile"
-      block
-      h-auto
-      w-full
-      src="@/assets/images/crm/banner.png"
-    />
-    <img v-else block h-auto w-full src="@/assets/images/crm/m/banner.png" />
+    <template v-if="locale === 'zh_TW'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/crm/banner.png"
+      />
+      <img v-else block h-auto w-full src="@/assets/images/crm/m/banner.png" />
+    </template>
+    <template v-if="locale === 'en_US'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/crm/banner-en.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/crm/m/banner-en.png"
+      />
+    </template>
+    <template v-if="locale === 'zh_CN'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/crm/banner-zh.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/crm/m/banner-zh.png"
+      />
+    </template>
+
     <div class="block1" max-w-1400 m-auto py-80>
       <div class="title" text="center 30" w-1000 font-700 leading-43 m-auto>
         {{ $t('crm.block1Title') }}
@@ -320,6 +355,9 @@
 <script setup lang="ts">
   import { useGlobalStore } from '@/store'
   import { storeToRefs } from 'pinia'
+  import { useI18n } from 'vue-i18n'
+
+  const { locale } = useI18n()
 
   const globalStore = useGlobalStore()
 
@@ -329,6 +367,11 @@
 <style scoped lang="scss">
   @use './mobile.scss';
   .block1 {
+    .item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .item1 {
       background: linear-gradient(90deg, #f2f9fd 0%, #d9e6fd 100%);
     }

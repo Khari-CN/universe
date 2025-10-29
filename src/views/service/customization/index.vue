@@ -1,20 +1,54 @@
 <template>
   <div>
     <home-header></home-header>
-    <img
-      v-if="!isMobile"
-      block
-      h-auto
-      w-full
-      src="@/assets/images/customization/banner.png"
-    />
-    <img
-      v-else
-      block
-      h-auto
-      w-full
-      src="@/assets/images/customization/m/banner.png"
-    />
+    <template v-if="locale === 'zh_TW'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/customization/banner.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/customization/m/banner.png"
+      />
+    </template>
+    <template v-if="locale === 'en_US'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/customization/banner-en.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/customization/m/banner-en.png"
+      />
+    </template>
+    <template v-if="locale === 'zh_CN'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/customization/banner-zh.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/customization/m/banner-zh.png"
+      />
+    </template>
     <div class="block1" max-w-1400 m-auto py-80>
       <div class="title" text="center 30" w-900 font-700 leading-43 m-auto>
         {{ $t('customization.block1Title') }}
@@ -178,7 +212,7 @@
       </div>
     </div>
     <div class="block3" py-80 max-w="1400" m-auto>
-      <div text="center 48" font-700 leading-70>
+      <div class="title" text="center 48" font-700 leading-70>
         {{ $t('customization.block3Title', ['&nbsp;&nbsp;']) }}
       </div>
       <div class="flex-wrapper" flex gap-40 mt-40 flex-wrap>
@@ -321,8 +355,8 @@
         <div class="title" text="center 48" font-700 leading-70>
           {{ $t('customization.block4Title') }}
         </div>
-        <div class="flex-wrapper" mt-40 flex gap-40>
-          <div class="item1 item" flex-1 text="#fff" p-50 h-185>
+        <div class="flex-wrapper" mt-40 flex gap-40 flex-wrap>
+          <div class="item1 item" flex-1 text="#fff" p-50 h-185 min-w="44%">
             <div class="title" text-20 font-700>
               {{ $t('customization.block4Item1Title') }}
             </div>
@@ -330,7 +364,7 @@
               {{ $t('customization.block4Item1Des') }}
             </div>
           </div>
-          <div class="item2 item" flex-1 text="#fff" p-50 h-185>
+          <div class="item2 item" flex-1 text="#fff" p-50 h-185 min-w="44%">
             <div class="title" text-20 font-700>
               {{ $t('customization.block4Item2Title') }}
             </div>
@@ -367,20 +401,35 @@
             <div
               class="item-title"
               rounded-12
-              leading-70
+              flex
+              items-center
+              justify-center
+              h-70
+              leading-24
               text="20 #fff"
               font-700
             >
+              1. <br v-if="!isMobile && locale === 'en_US'" />
               {{ $t('customization.block5Item1Title') }}
             </div>
-            <div class="des" text="16" p-30 bg="#fff" rounded-12 mt--14 pt-44>
+            <div
+              class="des"
+              text="16"
+              p-30
+              bg="#fff"
+              rounded-12
+              mt--14
+              pt-44
+              :style="{
+                height: isMobile ? 'auto' : '40rem',
+              }"
+            >
               {{ $t('customization.block5Item1Sub') }}
             </div>
           </div>
           <img
             v-if="!isMobile"
             w-35
-            pt-60
             src="@/assets/images/app/arrow.png"
             alt=""
           />
@@ -389,20 +438,35 @@
             <div
               class="item-title"
               rounded-12
-              leading-70
+              flex
+              items-center
+              justify-center
+              h-70
+              leading-24
               text="20 #fff"
               font-700
             >
+              2. <br v-if="!isMobile && locale === 'en_US'" />
               {{ $t('customization.block5Item2Title') }}
             </div>
-            <div class="des" text="16" p-30 bg="#fff" rounded-12 mt--14 pt-44>
+            <div
+              class="des"
+              text="16"
+              p-30
+              bg="#fff"
+              rounded-12
+              mt--14
+              pt-44
+              :style="{
+                height: isMobile ? 'auto' : '40rem',
+              }"
+            >
               {{ $t('customization.block5Item2Sub') }}
             </div>
           </div>
           <img
             v-if="!isMobile"
             w-35
-            pt-60
             src="@/assets/images/app/arrow.png"
             alt=""
           />
@@ -411,20 +475,35 @@
             <div
               class="item-title"
               rounded-12
-              leading-70
+              flex
+              items-center
+              justify-center
+              h-70
+              leading-24
               text="20 #fff"
               font-700
             >
+              3. <br v-if="!isMobile && locale === 'en_US'" />
               {{ $t('customization.block5Item3Title') }}
             </div>
-            <div class="des" text="16" p-30 bg="#fff" rounded-12 mt--14 pt-44>
+            <div
+              class="des"
+              text="16"
+              p-30
+              bg="#fff"
+              rounded-12
+              mt--14
+              pt-44
+              :style="{
+                height: isMobile ? 'auto' : '40rem',
+              }"
+            >
               {{ $t('customization.block5Item3Sub') }}
             </div>
           </div>
           <img
             v-if="!isMobile"
             w-35
-            pt-60
             src="@/assets/images/app/arrow.png"
             alt=""
           />
@@ -433,20 +512,35 @@
             <div
               class="item-title"
               rounded-12
-              leading-70
+              flex
+              items-center
+              justify-center
+              h-70
+              leading-24
               text="20 #fff"
               font-700
             >
+              4. <br v-if="!isMobile && locale === 'en_US'" />
               {{ $t('customization.block5Item4Title') }}
             </div>
-            <div class="des" text="16" p-30 bg="#fff" rounded-12 mt--14 pt-44>
+            <div
+              class="des"
+              text="16"
+              p-30
+              bg="#fff"
+              rounded-12
+              mt--14
+              pt-44
+              :style="{
+                height: isMobile ? 'auto' : '40rem',
+              }"
+            >
               {{ $t('customization.block5Item4Sub') }}
             </div>
           </div>
           <img
             v-if="!isMobile"
             w-35
-            pt-60
             src="@/assets/images/app/arrow.png"
             alt=""
           />
@@ -455,13 +549,29 @@
             <div
               class="item-title"
               rounded-12
-              leading-70
+              flex
+              items-center
+              justify-center
+              h-70
+              leading-24
               text="20 #fff"
               font-700
             >
+              5. <br v-if="!isMobile && locale === 'en_US'" />
               {{ $t('customization.block5Item5Title') }}
             </div>
-            <div class="des" text="16" p-30 bg="#fff" rounded-12 mt--14 pt-44>
+            <div
+              class="des"
+              text="16"
+              p-30
+              bg="#fff"
+              rounded-12
+              mt--14
+              pt-44
+              :style="{
+                height: isMobile ? 'auto' : '40rem',
+              }"
+            >
               {{ $t('customization.block5Item5Sub') }}
             </div>
           </div>
@@ -470,7 +580,7 @@
           class="text-20 btn"
           mt-40
           h-60
-          w-274
+          min-w-274
           round
           color="#FFC300"
           text-color="#171A1D"
@@ -488,6 +598,9 @@
 <script setup lang="ts">
   import { useGlobalStore } from '@/store'
   import { storeToRefs } from 'pinia'
+  import { useI18n } from 'vue-i18n'
+
+  const { locale } = useI18n()
 
   const globalStore = useGlobalStore()
 
@@ -497,6 +610,11 @@
 <style scoped lang="scss">
   @use './mobile.scss';
   .block1 {
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     .item1 {
       background: linear-gradient(90deg, #f2f9fd 0%, #d9e6fd 100%);
     }
@@ -511,6 +629,13 @@
     }
     .item5 {
       background: linear-gradient(90deg, #f6f2fe 0%, #e4dffc 100%);
+    }
+  }
+  .block4 {
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
   .block5 {

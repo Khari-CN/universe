@@ -1,20 +1,54 @@
 <template>
   <div>
     <home-header></home-header>
-    <img
-      v-if="!isMobile"
-      block
-      h-auto
-      w-full
-      src="@/assets/images/aboutUs/banner.png"
-    />
-    <img
-      v-else
-      block
-      h-auto
-      w-full
-      src="@/assets/images/aboutUs/m/banner.png"
-    />
+    <template v-if="locale === 'zh_TW'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/aboutUs/banner.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/aboutUs/m/banner.png"
+      />
+    </template>
+    <template v-if="locale === 'en_US'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/aboutUs/banner-en.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/aboutUs/m/banner-en.png"
+      />
+    </template>
+    <template v-if="locale === 'zh_CN'">
+      <img
+        v-if="!isMobile"
+        block
+        h-auto
+        w-full
+        src="@/assets/images/aboutUs/banner-zh.png"
+      />
+      <img
+        v-else
+        block
+        h-auto
+        w-full
+        src="@/assets/images/aboutUs/m/banner-zh.png"
+      />
+    </template>
     <div class="block1" max-w-1400 m-auto py-80>
       <div class="title" text="center 48" font-700 leading-70>
         {{ $t('aboutUs.block1Title') }}
@@ -82,6 +116,7 @@
           <img
             v-if="!isMobile"
             w-340
+            h-200
             src="@/assets/images/aboutUs/block3-icon1.png"
             alt=""
           />
@@ -92,6 +127,7 @@
             px-40
             py-56
             w-340
+            h-200
             c-shadow
             rounded-r-16
           >
@@ -105,8 +141,9 @@
         </div>
         <div flex>
           <img
-            w-340
             v-if="!isMobile"
+            w-340
+            h-200
             src="@/assets/images/aboutUs/block3-icon2.png"
             alt=""
           />
@@ -118,6 +155,7 @@
             px-40
             py-56
             w-340
+            h-200
             c-shadow
             rounded-r-16
           >
@@ -138,6 +176,7 @@
             px-40
             py-56
             w-340
+            h-200
             c-shadow
             rounded-l-16
           >
@@ -150,6 +189,7 @@
           </div>
           <img
             v-if="!isMobile"
+            h-200
             w-340
             src="@/assets/images/aboutUs/block3-icon3.png"
             alt=""
@@ -162,6 +202,7 @@
             text="center"
             px-40
             py-56
+            h-200
             w-340
             c-shadow
             rounded-l-16
@@ -175,6 +216,7 @@
           </div>
           <img
             v-if="!isMobile"
+            h-200
             w-340
             src="@/assets/images/aboutUs/block3-icon4.png"
             alt=""
@@ -254,7 +296,8 @@
 <script setup lang="ts">
   import { useGlobalStore } from '@/store'
   import { storeToRefs } from 'pinia'
-
+  import { useI18n } from 'vue-i18n'
+  const { locale } = useI18n()
   const globalStore = useGlobalStore()
 
   const { isMobile } = storeToRefs(globalStore)
@@ -268,7 +311,19 @@
       background: url('@/assets/images/aboutUs/block2-bg.png');
       background-size: cover;
     }
+    .block3 {
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
     .block4 {
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
       .item1 {
         background: url('@/assets/images/aboutUs/block4-bg1.png');
         background-size: cover;
